@@ -15,6 +15,10 @@ class Book {
         this.isbn = isbn;
     }
 
+    Book(Book book){
+        this(book.title, book.author, book.releaseDate, book.pages, book.publisher, book.isbn);
+    }
+
     void printInfo(){
         String info = title + "; " + author + "; " + releaseDate + "; " + pages + "; " + publisher + "; " + isbn;
         System.out.println(info);
